@@ -144,6 +144,24 @@ document.addEventListener('DOMContentLoaded', () => {
     createSparkleBurst(window.innerWidth / 2, window.innerHeight / 2);
   });
 
+  // Mobile Navigation Menu Toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.querySelector('span').textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.querySelector('span').textContent = '☰';
+      });
+    });
+  }
+
   // --------------------------------------------------------------------------
   // 3. CUSTOM CURSOR & PARTICLES
   // --------------------------------------------------------------------------
