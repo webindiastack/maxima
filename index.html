@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>STUDIO MAXIMA // Hyper-Maximalist Digital Agency & Culture Lab</title>
+  <meta name="description" content="STUDIO MAXIMA is an avant-garde digital design agency specializing in hyper-maximalist web design, interactive soundscapes, generative digital art, and bold neo-brutalist brand experiences.">
+  <meta name="keywords" content="maximalist web design, neo brutalism, web audio synth, interactive digital agency, high density design, visual art studio">
+  <meta name="author" content="Studio Maxima">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="STUDIO MAXIMA // Everything All At Once">
+  <meta property="og:description" content="Avant-garde digital art agency & interactive chaos culture lab. Explore hyper-vibrant web experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="default">
+
+  <!-- Background Visual Texture Noise -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Top Announcement Marquee Ticker -->
+  <div class="marquee-wrapper" id="topMarquee">
+    <div class="marquee-content">
+      <span>STUDIO MAXIMA // EVERYTHING ALL AT ONCE</span>
+      <span>HYPER-MAXIMALIST WEB EXPERIENCES</span>
+      <span>NEO-BRUTALIST DIGITAL ART</span>
+      <span>WEB AUDIO SOUNDSCAPES</span>
+      <span>CHAOS THEME SHIFTER ACTIVE</span>
+      <span>2026 AVANT-GARDE EDITION</span>
+    </div>
+    <div class="marquee-content" aria-hidden="true">
+      <span>STUDIO MAXIMA // EVERYTHING ALL AT ONCE</span>
+      <span>HYPER-MAXIMALIST WEB EXPERIENCES</span>
+      <span>NEO-BRUTALIST DIGITAL ART</span>
+      <span>WEB AUDIO SOUNDSCAPES</span>
+      <span>CHAOS THEME SHIFTER ACTIVE</span>
+      <span>2026 AVANT-GARDE EDITION</span>
+    </div>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="header" id="mainHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" id="headerLogo">
+        <span>MAXIMA</span>
+        <span class="logo-tag">V4.0</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Overview</a></li>
+          <li><a href="#stickers">Sticker Board</a></li>
+          <li><a href="#canvas-lab">Generative Lab</a></li>
+          <li><a href="#portfolio">Showcase</a></li>
+          <li><a href="#services">Capabilities</a></li>
+          <li><a href="#contact">Initiate</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Chaos Theme Shifter Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Shift Color Theme">
+          <span>🎨</span>
+          <span id="themeLabel">THEME: ACID CYBER</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <div class="brutal-badge badge-rotated-right" style="margin-bottom: 1.2rem;">★ AVANT-GARDE DIGITAL CULTURE ★</div>
+          
+          <h1 class="hero-title" id="heroMainHeading">
+            WE CREATE <span class="highlight-lime">MAXIMALIST</span> <span class="highlight-stroke">DIGITAL</span> CHAOS
+          </h1>
+          
+          <p class="hero-subtitle">
+            Say goodbye to boring, sterile, minimal grey boxes. Studio Maxima crafts high-density, hyper-vibrant, interactive web visualscapes that demand attention and leave lasting impressions.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#portfolio" class="brutal-btn" id="heroExploreBtn">
+              <span>EXPLORE WORKS</span>
+              <span>⚡</span>
+            </a>
+            <a href="#contact" class="brutal-btn brutal-btn--pink" id="heroStartProjectBtn">
+              <span>START A PROJECT</span>
+              <span>🔥</span>
+            </a>
+          </div>
+
+          <div class="brutal-card" style="display: inline-flex; align-items: center; gap: 1.5rem; background: var(--bg-card);">
+            <div>
+              <strong style="display:block; font-size:1.5rem; font-family:var(--font-heading); color:var(--accent-lime);">100%</strong>
+              <span style="font-size:0.85rem; font-weight:700;">VISUAL DENSITY</span>
+            </div>
+            <div style="width:2px; height:40px; background:var(--border-color);"></div>
+            <div>
+              <strong style="display:block; font-size:1.5rem; font-family:var(--font-heading); color:var(--accent-pink);">4.8K</strong>
+              <span style="font-size:0.85rem; font-weight:700;">STEEP CREATIVE DOSES</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-col">
+          <div class="hero-visual-card" id="heroCard">
+            <img src="assets/poster1.png" alt="Studio Maxima Poster Art" id="heroImage">
+            <div class="brutal-badge floating-badge floating-badge-1">HOT DIGITALS</div>
+            <div class="brutal-badge floating-badge floating-badge-2" style="background:var(--accent-pink); color:#fff;">NO MINIMALISM</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRAGGABLE STICKER LAB -->
+    <section class="sticker-section" id="stickers">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="brutal-badge" style="margin-bottom: 0.5rem;">INTERACTIVE PLAYGROUND</span>
+            <h2 class="section-title" id="stickerTitle">INTERACTIVE STICKER BOARD 📌</h2>
+          </div>
+          <p class="section-desc">
+            Drag, move, clutter, and arrange hyper-graphic stickers anywhere on the canvas below. Click "SPAWN STICKER" to add custom badges!
+          </p>
+        </div>
+
+        <div class="sticker-board" id="stickerBoard">
+          <div class="sticker-board-hint">✦ DRAG ANY STICKER WITH MOUSE OR TOUCH ✦</div>
+          
+          <!-- Default Pre-loaded Draggable Stickers -->
+          <div class="draggable-sticker" style="top: 60px; left: 80px;" data-rotation="-6">
+            <div class="sticker-pill" style="background: var(--accent-lime); color: #000;">⚡ HYPER-GRAPHIC ⚡</div>
+          </div>
+
+          <div class="draggable-sticker" style="top: 180px; left: 320px;" data-rotation="8">
+            <div class="sticker-pill" style="background: var(--accent-pink); color: #fff;">🔥 100% VISUAL NOISE</div>
+          </div>
+
+          <div class="draggable-sticker" style="top: 100px; right: 120px;" data-rotation="-12">
+            <div class="sticker-pill" style="background: var(--accent-cyan); color: #000;">🌀 SYNTH-WAVE '89</div>
+          </div>
+
+          <div class="draggable-sticker" style="bottom: 80px; left: 160px;" data-rotation="5">
+            <div class="sticker-pill" style="background: var(--accent-yellow); color: #000;">★ NO PLACEHOLDERS ★</div>
+          </div>
+
+          <div class="draggable-sticker" style="bottom: 50px; right: 200px;" data-rotation="-4">
+            <div class="sticker-pill" style="background: var(--accent-purple); color: #fff;">💎 NEO-BRUTALIST</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button class="brutal-btn" id="spawnStickerBtn">
+            <span>+ SPAWN RANDOM STICKER</span>
+          </button>
+          <button class="brutal-btn brutal-btn--pink" id="resetStickersBtn">
+            <span>↺ RESET CANVAS</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GENERATIVE CANVAS LAB -->
+    <section class="canvas-section" id="canvas-lab">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="brutal-badge" style="background:var(--accent-cyan); color:#000;">REALTIME GRAPHICS SYNTH</span>
+            <h2 class="section-title" id="canvasTitle">GENERATIVE ART CANVAS LAB 🎨</h2>
+          </div>
+          <p class="section-desc">
+            Adjust chaos parameters below to generate custom maximalist geometric patterns and color glitches live in your browser.
+          </p>
+        </div>
+
+        <div class="canvas-controls-grid">
+          <div class="art-canvas-container">
+            <canvas id="generativeCanvas"></canvas>
+          </div>
+
+          <div class="brutal-card control-panel">
+            <h3 style="font-family:var(--font-heading); font-size:1.2rem; text-transform:uppercase; margin-bottom:0.5rem; border-bottom:2px solid var(--border-color); padding-bottom:0.5rem;">
+              LAB CONTROLS
+            </h3>
+
+            <div class="control-group">
+              <label for="sliderChaos">Chaos Density: <span id="valChaos">65</span></label>
+              <input type="range" id="sliderChaos" class="control-slider" min="10" max="150" value="65">
+            </div>
+
+            <div class="control-group">
+              <label for="sliderSpeed">Animation Speed: <span id="valSpeed">5</span></label>
+              <input type="range" id="sliderSpeed" class="control-slider" min="1" max="20" value="5">
+            </div>
+
+            <div class="control-group">
+              <label for="sliderSize">Geometric Scale: <span id="valSize">40</span></label>
+              <input type="range" id="sliderSize" class="control-slider" min="10" max="100" value="40">
+            </div>
+
+            <div class="control-group">
+              <label for="selectPattern">Pattern Matrix</label>
+              <select id="selectPattern" class="form-input" style="padding:0.5rem;">
+                <option value="cyberGrid">Cyber Grid Pulsar</option>
+                <option value="acidVortices">Acid Vortices</option>
+                <option value="brutalRays">Brutal Rays & Glitch</option>
+              </select>
+            </div>
+
+            <button class="brutal-btn" id="randomizeArtBtn" style="width:100%; justify-content:center; margin-top:0.5rem;">
+              <span>🔀 RANDOMIZE PARAMETERS</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="brutal-badge" style="background:var(--accent-pink); color:#fff;">CURATED ARCHIVE</span>
+            <h2 class="section-title" id="portfolioTitle">FEATURED SHOWCASE 🚀</h2>
+          </div>
+          <p class="section-desc">
+            Explore our archive of hyper-maximalist web design, 3D audio-reactive experiences, and high-impact identity systems.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all" id="filterAll">ALL PROJECTS</button>
+          <button class="filter-btn" data-filter="web3d" id="filterWeb3D">WEB 3D / GL</button>
+          <button class="filter-btn" data-filter="graphic" id="filterGraphic">HYPER GRAPHICS</button>
+          <button class="filter-btn" data-filter="brand" id="filterBrand">BRAND IDENTITY</button>
+        </div>
+
+        <!-- Grid of Project Cards -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          
+          <!-- Card 1 -->
+          <article class="project-card" data-category="web3d" id="projectCard1">
+            <div class="project-img-wrapper">
+              <img src="assets/poster1.png" alt="Neon Aether Cybernetic Pulse">
+              <span class="project-tag">WEB 3D / AUDIO</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NEON AETHER '89</h3>
+              <p class="project-desc">Interactive WebGL soundscape featuring live Web Audio frequency visualizers and retro CRT static shaders.</p>
+              <div class="project-footer">
+                <span style="font-family:var(--font-heading); font-size:0.85rem; color:var(--accent-lime);">LAUNCH SITE ➔</span>
+                <span style="font-size:0.8rem; font-weight:700;">2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-category="graphic" id="projectCard2">
+            <div class="project-img-wrapper">
+              <img src="assets/poster2.png" alt="Ultra Vibrant Cyber Chaos">
+              <span class="project-tag">HYPER GRAPHICS</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CHROME CHAOS ISSUE 04</h3>
+              <p class="project-desc">Maximalist digital magazine layout with dense typographic hierarchies, liquid chrome 3D graphics, and dynamic stickers.</p>
+              <div class="project-footer">
+                <span style="font-family:var(--font-heading); font-size:0.85rem; color:var(--accent-pink);">VIEW MAGAZINE ➔</span>
+                <span style="font-size:0.8rem; font-weight:700;">2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" data-category="brand" id="projectCard3">
+            <div class="project-img-wrapper">
+              <img src="assets/poster1.png" alt="Brutal Soundscapes Identity">
+              <span class="project-tag">BRAND IDENTITY</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">WAREHOUSE ZONE 04</h3>
+              <p class="project-desc">Complete identity & web ecosystem for an underground cybernetic rave venue in Neo-Tokyo.</p>
+              <div class="project-footer">
+                <span style="font-family:var(--font-heading); font-size:0.85rem; color:var(--accent-cyan);">CASE STUDY ➔</span>
+                <span style="font-size:0.8rem; font-weight:700;">2025</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" data-category="web3d" id="projectCard4">
+            <div class="project-img-wrapper">
+              <img src="assets/poster2.png" alt="Generative Synth Portal">
+              <span class="project-tag">WEB 3D / GL</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SYNTH-WAVE PORTAL</h3>
+              <p class="project-desc">Custom audio synthesizer integrated into a 3D generative website with full custom particle systems.</p>
+              <div class="project-footer">
+                <span style="font-family:var(--font-heading); font-size:0.85rem; color:var(--accent-yellow);">LAUNCH DEMO ➔</span>
+                <span style="font-size:0.8rem; font-weight:700;">2025</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES MATRIX -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="brutal-badge" style="background:var(--accent-lime); color:#000;">WHAT WE DO</span>
+            <h2 class="section-title" id="servicesTitle">MAXIMALIST CAPABILITIES ⚡</h2>
+          </div>
+          <p class="section-desc">
+            We offer bespoke digital art, high-potency frontend engineering, and immersive Web Audio integrations.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" id="serviceCard1">
+            <div class="service-num">01</div>
+            <h3 class="service-title">Hyper-Maximalist Websites</h3>
+            <p>Bespoke web applications built with high visual density, animated graphics, bespoke micro-interactions, and bold typography.</p>
+            <ul class="service-list">
+              <li>Vanilla JS & Custom CSS Architecture</li>
+              <li>Responsive Dynamic Layouts</li>
+              <li>Interactive Micro-Animations</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="serviceCard2">
+            <div class="service-num" style="color:var(--accent-pink);">02</div>
+            <h3 class="service-title">Web Audio & Sound Design</h3>
+            <p>Custom Web Audio API synthesizer integrations, interactive hover soundscapes, and sound-reactive visualizers.</p>
+            <ul class="service-list">
+              <li>Web Audio Synth Engines</li>
+              <li>Spatial Sound Effects</li>
+              <li>Audio-Reactive Visual Systems</li>
+            </ul>
+          </div>
+
+          <div class="service-card" id="serviceCard3">
+            <div class="service-num" style="color:var(--accent-cyan);">03</div>
+            <h3 class="service-title">Neo-Brutalist Brand Systems</h3>
+            <p>High-impact visual identity design, sticker packs, typography design, and custom digital marketing collateral.</p>
+            <ul class="service-list">
+              <li>Dense Typographic Systems</li>
+              <li>Sticker & Badge Toolkits</li>
+              <li>Generative Canvas Assets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INITIATE PROJECT CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <span class="brutal-badge" style="margin-bottom: 0.8rem;">GET IN TOUCH</span>
+            <h2 class="section-title" style="margin-bottom: 1rem;">INITIATE CHAOS PROJECT 💬</h2>
+            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+              Ready to ditch boring templates and create something extraordinary? Send us your message and let's craft a maximalist web experience together.
+            </p>
+
+            <div class="brutal-card" style="margin-bottom: 1.5rem;">
+              <h4 style="font-family:var(--font-heading); font-size:1.1rem; margin-bottom:0.4rem; color:var(--accent-lime);">HQ COORDINATES</h4>
+              <p style="font-weight:600;">Neo-Tokyo / San Francisco / Digital Ether</p>
+              <p style="font-size:0.9rem; opacity:0.8;">ping@studiomaxima.art</p>
+            </div>
+          </div>
+
+          <!-- Interactive Form -->
+          <div class="brutal-card">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="inputName">Your Name / Handle</label>
+                <input type="text" id="inputName" class="form-input" placeholder="e.g. Alex Cyber" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inputEmail">Direct Email</label>
+                <input type="email" id="inputEmail" class="form-input" placeholder="e.g. alex@cyberpunk.io" required>
+              </div>
+
+              <div class="form-group">
+                <label for="selectVision">Project Type</label>
+                <select id="selectVision" class="form-input">
+                  <option value="website">Hyper-Maximalist Web App</option>
+                  <option value="audio">Web Audio Soundscape</option>
+                  <option value="branding">Neo-Brutalist Brand System</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inputMessage">Project Vision & Ideas</label>
+                <textarea id="inputMessage" class="form-textarea" rows="4" placeholder="Tell us about your project vision..." required></textarea>
+              </div>
+
+              <button type="submit" class="brutal-btn" id="submitFormBtn" style="width:100%; justify-content:center;">
+                <span>TRANSMIT MESSAGE</span>
+                <span>🚀</span>
+              </button>
+            </form>
+            
+            <div id="formSuccessMessage" style="display:none; margin-top:1rem; padding:1rem; background:var(--accent-lime); color:#000; font-family:var(--font-heading); text-align:center; border:2px solid #000; box-shadow:4px 4px 0px #000;">
+              ⚡ MESSAGE TRANSMITTED! WE WILL RESPOND IN 24 HOURS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="logo" style="color:#fff;">
+          <span>STUDIO MAXIMA</span>
+        </a>
+
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          <span id="systemTimeClock">SYSTEM TIME: LOADING...</span>
+        </div>
+
+        <div class="footer-copy">
+          &copy; 2026 STUDIO MAXIMA. ALL RIGHTS RESERVED. NO MINIMALISM ALLOWED.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL POPUP LIGHTBOX FOR SHOWCASE ITEMS -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close-btn" id="modalCloseBtn">✕ CLOSE</button>
+      <h3 style="font-family:var(--font-heading); font-size:1.8rem; text-transform:uppercase; margin-bottom:0.8rem; color:var(--accent-lime);" id="modalTitle">
+        PROJECT TITLE
+      </h3>
+      <div style="width:100%; height:250px; overflow:hidden; border:2px solid var(--border-color); margin-bottom:1rem;">
+        <img src="assets/poster1.png" id="modalImage" alt="Project Detail" style="width:100%; height:100%; object-fit:cover;">
+      </div>
+      <p style="font-size:1rem; margin-bottom:1.5rem; line-height:1.6;" id="modalDesc">
+        Detailed description of the maximalist project workflow and interactive features.
+      </p>
+      <a href="#contact" class="brutal-btn" id="modalCtaBtn" style="width:100%; justify-content:center;">
+        <span>REQUEST SIMILAR WORK</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript App Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
